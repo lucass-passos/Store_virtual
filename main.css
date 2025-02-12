@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    border-bottom: 2px;
+    margin-bottom: 25px;
+}
+
+header .container,
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    margin-top: 16px;
+}
+
+.container-flex {
+    display: flex;
+} 
+
+header,
+footer {
+    background-color: rgb(105, 205, 205);
+    padding-top: 15px;
+    color: #fff;
+}
+
+form input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+}
+
+
+form button {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(47, 156, 156);
+    color: #fff;
+}
+
+.menu>li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#sobre-a-loja img {
+    max-width: 550px;
+    margin-right: 20px;
+}
+
+#sobre-a-loja p {
+    font-size: 19px;
+}
+
+#sobre-a-loja h2 {
+    max-width: 100%;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.artigos {
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 2%;
+    row-gap: 3%;
+    text-align: center;
+}
+
+.artigos article {
+    padding: 5px;
+    box-shadow: 3px 3px 5px 3px #a2a0a0;
+    border-radius: 4px;
+}
+
+.artigos img {
+    max-width: 320px;
+}
+
+.artigos p {
+    margin-bottom: 5px;
+}
+
+.artigos button {
+    padding: 5px;
+    background-color: rgb(189, 164, 52);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+        flex-direction: column;
+    }
+
+    form {
+        margin-top: 12px;
+    }
+
+    .artigos {
+        display: block;
+    }
+
+    .artigos .produtos {
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .botao-menu button {
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(47, 156, 156);
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .botao-menu :hover {
+        background-color: #a2a0a0;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    form {
+        margin-top: 12px;
+    }
+
+    .artigos {
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .artigos .produtos {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    #sobre-a-loja img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    .menu {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .botao-menu {
+        display: none;
+    }
+
+    .menu {
+        margin-top: 16px;
+    }
+
+}
